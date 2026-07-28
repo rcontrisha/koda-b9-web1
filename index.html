@@ -11,14 +11,14 @@
     <p>
       The pattern describing where each split should occur. Can be <mark>undefined</mark>, a
       string, or an object with a <u>Symbol.split</u> method — the typical example
-      being a <u>regular expression</u>. Omitting <mark>separator</mark> or passing <mark>undefined</mark> causes
+      being a <a href="./pages/regex-desc.html">regular expression</a>. Omitting <mark>separator</mark> or passing <mark>undefined</mark> causes
       <mark>split()</mark> to return an array with the calling string as a single element.
       All values that are not <mark>undefined</mark> or objects with a <mark>[Symbol.split]()</mark>
       method are <b>coerced to strings</b>.
     </p>
     <h2>limit (<i>optional</i>)</h2>
     <p>
-      A non-negative integer specifying a limit on the number of substrings to
+      A non-negative integer specifying a limit on the number of <a href="./pages/substring-desc.html">substrings</a> to
       be included in the array. If provided, splits the string at each
       occurrence of the specified <mark>separator</mark>, but stops when <mark>limit</mark> entries have
       been placed in the array. Any leftover text is not included in the array
