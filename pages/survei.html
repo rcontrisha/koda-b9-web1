@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minitask 5</title>
+</head>
+<body>
+  <a href="../index.html">Back</a><br><br>
+  <h1>Form Survey Penonton Film</h1>
+  <form>
+    <div>
+      <label for="nama">Nama</label><br>
+      <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+    </div><br>
+    <div>
+      <label for="umur">Umur</label><br>
+      <input type="number" id="umur" placeholder="Masukkan umur (tahun)">
+    </div>
+    <div>
+      <p>Jenis Kelamin</p>
+      <input type="radio" name="gender" id="laki">
+      <label for="laki">Laki-laki</label>
+      <br>
+      <input type="radio" name="gender" id="perempuan">
+      <label for="perempuan">Perempuan</label>
+    </div><br>
+    <div>
+      <label for="hobi">Apakah anda hobi menonton film?</label><br>
+      <select id="hobi">
+        <option value="" disabled selected>Pilih jawaban</option>
+        <option value="ya">Ya</option>
+        <option value="tidak">Tidak</option>
+      </select>
+    </div>
+    <div>
+      <p>Genre film yg disukai</p>
+      <input type="checkbox" id="action">
+      <label for="action">Action</label>
+      <input type="checkbox" id="comedy">
+      <label for="comedy">Comedy</label>
+      <input type="checkbox" id="romance">
+      <label for="romance">Romance</label>
+    </div><br>
+    <button type="button">Submit</button>
+  </form>
+</body>
+</html>
