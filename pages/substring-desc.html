@@ -9,12 +9,15 @@
     <a href="../index.html">Back</a>
     <h1>Substrings</h1>
     <p>
-      <i>A substring is defined as a contiguous part of a string, i.e., a string
-      inside another string</i>. In formal language theory and computer science, a
-      substring is a contiguous sequence of characters within a string. For
-      instance, <mark>the best of</mark> is a substring of "It was <mark>the best of</mark> times". In
-      contrast, <mark>Itwastimes</mark> is a subsequence of "<mark>It</mark> <mark>was</mark> the best of <mark>times</mark>", but
-      not a substring.
+      <i
+        >A substring is defined as a contiguous part of a string, i.e., a string
+        inside another string</i
+      >. In formal language theory and computer science, a substring is a
+      contiguous sequence of characters within a string. For instance,
+      <mark>the best of</mark> is a substring of "It was
+      <mark>the best of</mark> times". In contrast, <mark>Itwastimes</mark> is a
+      subsequence of "<mark>It</mark> <mark>was</mark> the best of
+      <mark>times</mark>", but not a substring.
     </p>
     <h3>Characteristics of Substring</h3>
     <ul>
@@ -27,18 +30,61 @@
         The maximum length of a substring can be at most the same as the length
         of the string.
       </li>
-      <li>In a substring, contiguous characters from the string are kept.</li>
+      <!-- 
+        1. Hidden
+
+        Merupakan global atribut, yg digunakan untuk menyembunyikan elemen agar tidak ditampilkan di halaman web
+      -->
+      <li hidden>
+        In a substring, contiguous characters from the string are kept.
+      </li>
     </ul>
     <h3>Applications of Substring</h3>
-    <ul>
-      <li><b>Searching</b>: Imagine a large student dataset, where you want to find a particular name. By searching for a substring that matches the desired output, we can quickly identify the information we need.</li>
-      <li><b>Text-Processing</b>: If you want to extract all the emails or phone numbers from a large dataset, substring will make the task simple and faster.</li>
-      <li>Other uses of substring can be <b>data cleaning</b> or <b>string manipulation</b> where working with text and string data are extensively used.</li>
-    </ul>
+    <!-- 
+      2. Start (atribut untuk 'ol')
+
+      Atribut ini berisi bilangan bulat untuk memulai perhitungan item di dalam daftar.
+      Selalu berupa angka Arab (1, 2, 3, dst.), meskipun jenis penomorannya berupa huruf atau angka Romawi. 
+      Misalnya, untuk memulai penomoran elemen dari huruf "d" atau angka Romawi "iv," gunakan start="4".
+
+      3. Types (atribut untuk 'ol')
+
+      Digunakan untuk set tipe penomoran:
+        - 'a' -> huruf kecil
+        - 'A' -> huruf besar
+        - 'i' -> huruf romawi (kecil)
+        - 'I' -> huruf romawi (besar)
+        - '1' -> angka (default)
+     -->
+    <ol start="1" type="a">
+      <li>
+        <b>Searching</b>: Imagine a large student dataset, where you want to
+        find a particular name. By searching for a substring that matches the
+        desired output, we can quickly identify the information we need.
+      </li>
+      <li>
+        <b>Text-Processing</b>: If you want to extract all the emails or phone
+        numbers from a large dataset, substring will make the task simple and
+        faster.
+      </li>
+      <li>
+        Other uses of substring can be <b>data cleaning</b> or
+        <b>string manipulation</b> where working with text and string data are
+        extensively used.
+      </li>
+    </ol>
     <h3>References</h3>
     <ul>
-      <li><a href="https://www.geeksforgeeks.org/dsa/substring-meaning-in-dsa/">Substring Meaning in DSA - GeeksforGeeks</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/Substring">Substring - Wikipedia</a></li>
+      <li>
+        <a href="https://www.geeksforgeeks.org/dsa/substring-meaning-in-dsa/"
+          >Substring Meaning in DSA - GeeksforGeeks</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Substring"
+          >Substring - Wikipedia</a
+        >
+      </li>
     </ul>
   </body>
 </html>
