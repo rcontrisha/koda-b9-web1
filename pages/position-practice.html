@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Practice - CSS - Minitask 3</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 200vh;
+      }
+
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: darkslategrey;
+        padding: 15px 30px;
+      }
+
+      .nav-brand {
+        display: inline-block;
+      }
+
+      .nav-links {
+        display: inline-block;
+      }
+
+      .nav-links li {
+        display: inline-block;
+        padding-inline: 15px;
+      }
+
+      .main {
+        width: 100%;
+        height: fit-content;
+        padding: 8px;
+      }
+
+      .hero-section {
+        width: 100%;
+        height: 600px;
+        background-color: mediumorchid;
+        position: relative;
+        margin-bottom: 8px;
+      }
+
+      .hero-section h2 {
+        color: whitesmoke;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .feed-section {
+        width: 100%;
+        height: 600px;
+      }
+
+      .feed {
+        display: inline-block;
+        width: 64%;
+        height: 600px;
+        background-color: chocolate;
+        position: relative;
+        margin-right: 8px;
+      }
+
+      .feed h2 {
+        color: whitesmoke;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .aside {
+        display: inline-block;
+        width: 35%;
+        height: 600px;
+        background-color: darksalmon;
+        position: relative;
+      }
+
+      .aside h2 {
+        color: whitesmoke;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .fab {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+      }
+
+      .footer {
+        margin-top: 3.3rem;
+        background-color: darkgoldenrod;
+        height: 18%;
+        position: relative;
+        margin-inline: 8px;
+      }
+
+      .footer h2 {
+        color: whitesmoke;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="../index.html">Minitask 3 CSS</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="./kalender.html">Kalender</a></li>
+        <li><a href="./survei.html">Form Survey</a></li>
+        <li><a href="./talent-data.html">Simulasi Form Survey</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="hero-section">
+        <h2>Ini Hero Section</h2>
+      </div>
+      <div class="feed-section">
+        <div class="feed">
+          <h2>Ini Feed Section</h2>
+        </div>
+        <div class="aside">
+          <h2>Ini Aside Feed Section</h2>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Ini Footer</h2>
+    </div>
+    <a
+      class="fab"
+      href="https://www.linkedin.com/in/ridho-contrisha-6328b3297/"
+      target="_blank"
+    >
+      <img
+        src="https://images.icon-icons.com/2429/PNG/512/linkedin_logo_icon_147268.png"
+        alt="LinkedIn Ridho"
+        style="height: 50px; width: 50px"
+      />
+    </a>
+  </body>
+</html>
