@@ -1,0 +1,55 @@
+:root {
+  /* Custom properties for background color (primary and secondary) */
+  --bg-primary: darkgoldenrod;
+  --bg-secondary: darkcyan;
+}
+
+input[type="email"] {
+  /* Set border color for email input type to red */
+  border-color: red;
+}
+
+/* Keep red border color when user interacting with input field */
+input[type="email"]:focus {
+  border: 2px solid red;
+  outline: none;
+}
+
+button[data-role="primary"] {
+  /* Set border for all buttons that have data-role="primary" attribute */
+  border: 2px solid greenyellow;
+}
+
+/* Change text color for entire elements who have data-status="error" attribute */
+article[data-status="error"]{
+  color: crimson;
+}
+
+thead tr {
+  background-color: darkkhaki;
+}
+
+/* Set background color to bg-secondary (custom variable) for table rows */
+tbody tr {
+  background-color: var(--bg-secondary);
+}
+
+/* Set background color to bg-primary (custom variable) for odd table rows */
+tbody tr:nth-child(odd) {
+  background-color: var(--bg-primary);
+}
+
+/* Set background color for list element which is multiple of 2 (even) */
+li:nth-child(even) {
+  background-color: hotpink;
+}
+
+/* Change cursor appearance to pointer when user move their cursor to btn element (hover) */
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Set first letter to bigger size for p element which is sibling with h2, and act as a child from article */
+article > h2 ~ p::first-letter {
+  font-size: 50px;
+}
