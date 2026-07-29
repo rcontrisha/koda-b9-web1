@@ -4,23 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minitask 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .split {
+        text-decoration: underline;
+      }
+      #highlight {
+        font-weight: bolder;
+      }
+    </style>
   </head>
   <body>
     <h1>String.prototype.split() Parameters</h1>
     <h2>separator</h2>
     <p>
-      The pattern describing where each split should occur. Can be <mark>undefined</mark>, a
-      string, or an object with a <u>Symbol.split</u> method — the typical example
-      being a <a href="./pages/regex-desc.html">regular expression</a>. Omitting <mark>separator</mark> or passing <mark>undefined</mark> causes
-      <mark>split()</mark> to return an array with the calling string as a single element.
-      All values that are not <mark>undefined</mark> or objects with a <mark>[Symbol.split]()</mark>
-      method are <b>coerced to strings</b>.
+      The pattern describing where each split should occur. Can be <span class="mark">undefined</span>, a
+      string, or an object with a <span class="split">Symbol.split</span> method — the typical example
+      being a <a href="./pages/regex-desc.html">regular expression</a>. Omitting <span class="mark">separator</span> or passing <span class="mark">undefined</span> causes
+      <span class="mark">split()</span> to return an array with the calling string as a single element.
+      All values that are not <span class="mark">undefined</span> or objects with a <span class="split">Symbol.split</span>
+      method are <span id="highlight">coerced to strings</span>.
     </p>
-    <h2>limit (<i>optional</i>)</h2>
+    <h2>limit (<span style="font-style: italic;">optional</span>)</h2>
     <p>
       A non-negative integer specifying a limit on the number of <a href="./pages/substring-desc.html">substrings</a> to
       be included in the array. If provided, splits the string at each
-      occurrence of the specified <mark>separator</mark>, but stops when <mark>limit</mark> entries have
+      occurrence of the specified <span class="mark">separator</span>, but stops when <span class="mark">limit</span> entries have
       been placed in the array. Any leftover text is not included in the array
       at all.
     </p>
