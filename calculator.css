@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 8px 16px;
+}
+
+.field {
+  display: flex;
+  border: 1px solid #444746;
+  width: auto;
+  height: 72px;
+  padding: 10px 14px 0 10px;
+  box-sizing: border-box;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 16px;
+  align-items: end;
+  justify-content: end;
+}
+
+.field p {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #444746;
+}
+
+.main-container {
+  display: flex;
+  padding-block: 10px;
+  gap: 10px;
+}
+
+.advanced-container {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.basic-container {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  border-radius: 100px;
+  color: #eef0ff;
+  background: #2c303d;
+  height: 42px;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.num-btn {
+  border-radius: 100px;
+  color: #bfbfbf;
+  background: #5a5d68;
+  height: 42px;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sum-btn {
+  border-radius: 100px;
+  height: 42px;
+  color: #1f1f1f;
+  background: #a8c7fa;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
